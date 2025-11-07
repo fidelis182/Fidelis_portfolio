@@ -1421,73 +1421,60 @@ section,
   color: var(--contrast-color);
 }
 
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
-.services {
-  padding: 80px 0;
+//*--------------------------------------------------------------
+#
+  Services
+  Section
+  --------------------------------------------------------------*/
+  .services
+  .service-item {
+  position: relative;
 }
 
-.services .servies-title {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+.services .service-item .icon {
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid var(--accent-color);
+  margin-right: 20px;
 }
 
-.services .btn-outline-primary {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-  padding: 10px 30px;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-}
-
-.services .btn-outline-primary:hover {
-  background-color: var(--accent-color);
+.services .service-item .icon i {
   color: var(--contrast-color);
+  font-size: 24px;
+  line-height: 0;
 }
 
-.services .service-item {
-  background-color: var(--surface-color);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  transition: transform 0.3s ease;
+.services .service-item:hover .icon {
+  background: var(--surface-color);
 }
 
-.services .service-item:hover {
-  transform: scale(1.05);
-}
-
-.services .service-item i {
-  font-size: 2.5rem;
+.services .service-item:hover .icon i {
   color: var(--accent-color);
-  display: inline-block;
-  margin-bottom: 15px;
 }
 
-.services .service-item h3 {
-  font-size: 1.25rem;
+.services .service-item .title {
+  font-weight: 700;
   margin-bottom: 15px;
+  font-size: 18px;
 }
 
-.services .service-item h3 a {
+.services .service-item .title a {
   color: var(--heading-color);
 }
 
-.services .service-item h3 a:hover {
+.services .service-item .title a:hover {
   color: var(--accent-color);
 }
 
-.services .service-item p {
-  font-size: 0.9rem;
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
-}
-
-@media (max-width: 991px) {
-  .services h2 {
-    font-size: 2rem;
-  }
+.services .service-item .description {
+  line-height: 24px;
+  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
